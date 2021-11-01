@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple one page scroll</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+    body {
+        background-color: orchid;
+    }
+
+    .wrapper {
+        width: 1300px;
+        height: 4500px;
+        background-color: antiquewhite;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    nav {
+        width: 1200px;
+        height: 100px;
+        background-color: #ac87eb;
+        color: antiquewhite;
+        padding-top: 25px;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #section_01, #section_03, #section_05 {
+        width: 1200px;
+        height: 800px;
+        background-color: #dfcbfa;
+        margin: 0 auto;
+    }
+    #section_02, #section_04 {
+        width: 1200px;
+        height: 800px;
+        background-color: #efe8f6;
+        margin: 0 auto;
+    }
+
+p#nav_section_01, p#nav_section_02, p#nav_section_03, p#nav_section_04, p#nav_section_05 {
+    display: inline;
+    font-size: 24px;
+    font-family: "PT Sans";
+    font-weight: bold;
+    padding: 0 25px;
+}
+
+a:link {
+    text-decoration: none;
+    color: antiquewhite;
+}
+    /*a:visited {*/
+    /*    text-decoration: none;*/
+    /*    color: #faac75;*/
+    /*}*/
+    a:hover {
+        text-decoration: none;
+        color: #ecb368;
+    }
+    /*a:active {*/
+    /*    text-decoration: none;*/
+    /*    color: #5967ad;*/
+    /*}*/
+
+section {
+    color: antiquewhite;
+    font-size: 45px;
+    font-family: "PT Sans";
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+footer {
+    width: 1200px;
+    height: 100;
+    background-color: rebeccapurple;
+    margin: 0 auto
+}
+
+
+
+</style>
+<body>
+<div class="wrapper">
+<nav>
+    <a href="#section_01"><p id="nav_section_01">section one</p></a>
+    <a href="#section_02"><p id="nav_section_02">section two</p></a>
+    <a href="#section_03"><p id="nav_section_03">section three</p></a>
+    <a href="#section_04"><p id="nav_section_04">section four</p></a>
+    <a href="#section_05"><p id="nav_section_05">section five</p></a>
+
+
+</nav>
+
+<section id="section_01">section one</section>
+    <section id="section_02">section two</section>
+    <section id="section_03">section three</section>
+    <section id="section_04">section four</section>
+    <section id="section_05">section five</section>
+
+<footer><a href="#top">SCROLL BACK TO TOP!</a> </footer>
+
+</div><!-- END OF WRAPPER -->
+</body>
